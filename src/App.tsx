@@ -24,7 +24,7 @@ function App() {
         </AnimatePresence>
 
         <Navbar />
-        <div className="scroll-smooth">
+        <div className="scroll-smooth pt-16">
           <section id="home">
             <Home />
           </section>
