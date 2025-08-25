@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { CartProvider } from './context/CartContext';
 import Navbar from './components/Navbar';
 import Cart from './components/Cart';
@@ -18,13 +18,13 @@ function App() {
       <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-amber-50">
         {/* Popup */}
         <AnimatePresence>
-          {showPopup && (
-            <Popup onClose={() => setShowPopup(false)} />
-          )}
+          {showPopup && <Popup onClose={() => setShowPopup(false)} />}
         </AnimatePresence>
 
         <Navbar />
-        <div className="scroll-smooth pt-16">
+
+        {/* Key ensures content remounts after popup is dismissed */}
+        <div className="scroll-smooth pt-16" key={showPopup ? 'popup' : 'main'}>
           <section id="home">
             <Home />
           </section>
@@ -41,6 +41,7 @@ function App() {
             <Contact />
           </section>
         </div>
+
         <Cart />
       </div>
     </CartProvider>

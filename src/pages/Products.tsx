@@ -65,7 +65,7 @@ const Products = () => {
       image: './Farm Fresh Eggs.jpg',
       description: 'Kienyeji large eggs from free-range hens (per tray of 30)',
       rating: 5,
-      features: ['Grade A large', 'Free-range hens', 'Rich golden yolks'],
+      features: ['Pure kienyeji Kuroiler', 'Free-range kienyeji', 'Rich golden yolks'],
       category: 'Eggs'
     },
     {
