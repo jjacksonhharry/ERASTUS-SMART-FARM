@@ -63,7 +63,7 @@ const Navbar = () => {
               className="w-12 h-12 object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="flex flex-col items-start leading-tight">
-              <span className="text-xl font-bold text-gray-900">
+              <span className="text-l font-bold text-gray-900">
                 Erastus Smart Farm
               </span>
               <span className="text-sm text-yellow-600">
