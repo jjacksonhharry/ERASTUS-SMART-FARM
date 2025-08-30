@@ -57,12 +57,18 @@ const Navbar = () => {
             onClick={() => scrollToSection('home')}
             className="flex items-center space-x-2 group focus:outline-none"
           >
-            <div className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <span className="text-white font-bold text-lg">🐔</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900">Erastus Farm</span>
-              <span className="text-sm text-yellow-600">Premium Chicken</span>
+            <img 
+              src="./logo.png" 
+              alt="Erastus Smart Farm Logo" 
+              className="w-12 h-12 object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="flex flex-col items-start leading-tight">
+              <span className="text-xl font-bold text-gray-900">
+                Erastus Smart Farm
+              </span>
+              <span className="text-sm text-yellow-600">
+                Premium Chicken
+              </span>
             </div>
           </button>
 

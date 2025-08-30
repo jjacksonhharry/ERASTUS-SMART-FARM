@@ -17,7 +17,7 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-1 right-1 text-gray-700 hover:text-red-500 text-xl font-bold z-10"
+          className="absolute top-2 right-2 bg-gray-200 text-gray-900 hover:bg-red-500 hover:text-white rounded-full p-1 text-lg font-bold shadow-md transition-colors z-10"
         >
           ✕
         </button>
